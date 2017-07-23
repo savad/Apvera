@@ -1,0 +1,19 @@
+<div class="container-fluid admin-title-area" ng-init="userDetails()">
+    <div class="container" ng-if="token">
+        <h2>Profile : [[user_details.first_name]]</h2>
+    </div>
+</div>
+<div class="container formcontainer">
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Name: [[user_details.first_name]]</p>
+            <p>Email: [[user_details.email]]</p>
+            <p>Phone Number: [[user_details.phone_number]]</p>
+            <p>Address: [[user_details.address]]</p>
+        </div>
+    </div>
+</div>
+<script>
+    $('body').removeClass('loginarea');
+    $('.navbar-default').attr('style', 'display: block;');
+</script>
